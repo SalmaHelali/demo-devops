@@ -18,7 +18,7 @@ import java.util.List;
 @RequestMapping("/api/users")
 @Tag(name = "Utilisateurs", description = "API de gestion des utilisateurs")
 public class UserController {
-    @Autowired
+  //  @Autowired
     private UserService userService;
     // ==================== CREATE ====================
     @Operation(

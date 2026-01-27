@@ -39,7 +39,11 @@ public class User {
             required = true)
     private String email;
 
-    @Pattern(regexp = "^[0-9]{8}$", message = "Le téléphone doit contenir 8 chiffres")
+    @Pattern(
+            regexp = "^\\d{8}$",
+            message = "Le téléphone doit contenir 8 chiffres"
+    )
+
     @Schema(description = "Numéro de téléphone (8 chiffres)", example = "98765432")
     private String telephone;
 
