@@ -15,7 +15,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Build without running tests
-        run: mvn clean package -DskipTests
+        run: mvn -B clean package -DskipTests
 
       - name: SonarCloud Analysis
         env:
